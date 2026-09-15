@@ -725,3 +725,797 @@ footer p {
     padding: 18px;
   }
 }
+/* =========================================
+   SPAMSHIELD — GMAIL DASHBOARD
+   ========================================= */
+
+.gmail-section {
+  max-width: 900px;
+  margin: 0 auto 35px;
+  padding: 0 20px;
+}
+
+.gmail-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 26px;
+
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  box-shadow:
+    0 15px 40px rgba(15, 23, 42, 0.06),
+    0 2px 8px rgba(15, 23, 42, 0.03);
+
+  transition: 0.25s ease;
+}
+
+.gmail-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.08),
+    0 3px 10px rgba(15, 23, 42, 0.04);
+}
+
+.gmail-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: #f3f4f6;
+  color: #111827;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.gmail-content {
+  flex: 1;
+}
+
+.gmail-content h2 {
+  font-size: 18px;
+  letter-spacing: -0.4px;
+}
+
+.gmail-content p {
+  margin-top: 5px;
+
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.google-login-button {
+  margin-top: 14px;
+  padding: 11px 17px;
+
+  border: 1px solid #dfe3ea;
+  border-radius: 9px;
+
+  background: #111827;
+  color: white;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.google-login-button:hover {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  transform: translateY(-1px);
+}
+
+.google-login-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.email-count {
+  margin-top: 10px;
+
+  color: #16a34a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   GMAIL EMAIL LIST
+   ========================================= */
+
+.email-list {
+  margin-top: 20px;
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 40px rgba(15, 23, 42, 0.06);
+}
+
+.email-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px 26px;
+
+  border-bottom: 1px solid #eef0f3;
+}
+
+.email-list-header > div span {
+  color: #6366f1;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.email-list-header h2 {
+  margin-top: 5px;
+
+  font-size: 22px;
+  letter-spacing: -0.6px;
+}
+
+.email-total {
+  padding: 7px 11px;
+
+  background: #f5f5f7;
+  border-radius: 999px;
+
+  color: #6b7280;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   INDIVIDUAL EMAIL
+   ========================================= */
+
+.email-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 22px 26px;
+
+  border-bottom: 1px solid #f0f1f3;
+
+  transition: 0.2s ease;
+}
+
+.email-item:last-child {
+  border-bottom: none;
+}
+
+.email-item:hover {
+  background: #fafbff;
+}
+
+.email-number {
+  width: 34px;
+  min-width: 34px;
+
+  color: #c7c9d1;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.email-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.email-details h3 {
+  overflow: hidden;
+
+  color: #111827;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.email-from {
+  margin-top: 5px;
+
+  overflow: hidden;
+
+  color: #6b7280;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.email-date {
+  margin-top: 3px;
+
+  color: #9ca3af;
+
+  font-size: 10px;
+}
+
+.email-preview {
+  margin-top: 7px;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.email-analyze-button {
+  flex-shrink: 0;
+
+  padding: 9px 13px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  background: white;
+  color: #4f46e5;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.email-analyze-button:hover {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: white;
+
+  transform: translateY(-1px);
+}
+
+.email-analyze-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================================
+   CONNECTED STATE
+   ========================================= */
+
+.gmail-card:has(.gmail-icon:first-child) {
+  position: relative;
+}
+
+.gmail-card .gmail-icon {
+  background: #ecfdf3;
+  color: #16a34a;
+}
+
+
+/* =========================================
+   SMOOTH PAGE ANIMATIONS
+   ========================================= */
+
+.gmail-section,
+.analyzer-card,
+.result-card,
+.email-list,
+.feature-card {
+  animation: fadeUp 0.5s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   BETTER RESULT PRESENTATION
+   ========================================= */
+
+.result-card {
+  animation: resultAppear 0.35s ease both;
+}
+
+@keyframes resultAppear {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.result-card.spam {
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.06);
+}
+
+.result-card.safe {
+  box-shadow: 0 10px 30px rgba(22, 163, 74, 0.06);
+}
+
+
+/* =========================================
+   BETTER CONFIDENCE BAR
+   ========================================= */
+
+.confidence-fill {
+  background: linear-gradient(
+    90deg,
+    #6366f1,
+    #4f46e5
+  );
+}
+
+
+/* =========================================
+   RESPONSIVE GMAIL
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .gmail-card {
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .email-list-header {
+    padding: 20px;
+  }
+
+  .email-item {
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .email-number {
+    display: none;
+  }
+
+  .email-analyze-button {
+    margin-top: 2px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .gmail-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .gmail-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+  }
+
+  .google-login-button {
+    width: 100%;
+  }
+
+  .email-list-header {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .email-total {
+    white-space: nowrap;
+  }
+
+  .email-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .email-analyze-button {
+    width: 100%;
+  }
+
+  .email-details {
+    width: 100%;
+  }
+}
+/* =========================================
+   SPAMSHIELD — PREMIUM NAVBAR + HERO
+   ========================================= */
+
+/* Premium background */
+.app {
+  position: relative;
+  overflow: hidden;
+}
+
+.app::before {
+  content: "";
+  position: absolute;
+  top: -220px;
+  left: 50%;
+  width: 700px;
+  height: 500px;
+
+  transform: translateX(-50%);
+
+  background: radial-gradient(
+    circle,
+    rgba(99, 102, 241, 0.12) 0%,
+    rgba(99, 102, 241, 0.05) 35%,
+    transparent 70%
+  );
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+  position: relative;
+  z-index: 5;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.brand {
+  transition: 0.25s ease;
+}
+
+.brand:hover {
+  transform: translateY(-1px);
+}
+
+.brand-icon {
+  position: relative;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 13px;
+
+  background: linear-gradient(
+    135deg,
+    #111827,
+    #374151
+  );
+
+  box-shadow:
+    0 8px 20px rgba(17, 24, 39, 0.16);
+}
+
+.brand-icon::after {
+  content: "";
+
+  position: absolute;
+  inset: -3px;
+
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  border-radius: 15px;
+
+  pointer-events: none;
+}
+
+.brand h2 {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.brand span {
+  letter-spacing: 0.7px;
+}
+
+
+/* Model status */
+
+.nav-status {
+  box-shadow:
+    0 4px 14px rgba(15, 23, 42, 0.04);
+
+  transition: 0.2s ease;
+}
+
+.nav-status:hover {
+  border-color: #d9dcff;
+  box-shadow:
+    0 6px 18px rgba(79, 70, 229, 0.08);
+}
+
+.status-dot {
+  position: relative;
+}
+
+.status-dot::after {
+  content: "";
+
+  position: absolute;
+  inset: -3px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(34, 197, 94, 0.35);
+
+  animation: statusPulse 2s infinite;
+}
+
+@keyframes statusPulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 85px;
+  margin-bottom: 65px;
+}
+
+.hero-badge {
+  position: relative;
+
+  background: rgba(244, 246, 255, 0.8);
+
+  box-shadow:
+    0 5px 18px rgba(79, 70, 229, 0.06);
+
+  backdrop-filter: blur(8px);
+
+  transition: 0.25s ease;
+}
+
+.hero-badge:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 22px rgba(79, 70, 229, 0.1);
+}
+
+
+/* Main heading */
+
+.hero h1 {
+  position: relative;
+
+  font-weight: 850;
+
+  background: linear-gradient(
+    180deg,
+    #111827 0%,
+    #374151 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero h1 span {
+  background: linear-gradient(
+    135deg,
+    #4f46e5 0%,
+    #6366f1 50%,
+    #7c3aed 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+
+/* Hero description */
+
+.hero p {
+  color: #667085;
+
+  font-size: 16px;
+
+  max-width: 620px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   HERO DECORATIVE GRID
+   ========================================= */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 260px;
+  height: 180px;
+
+  top: -55px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background-image:
+    linear-gradient(
+      rgba(99, 102, 241, 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(99, 102, 241, 0.07) 1px,
+      transparent 1px
+    );
+
+  background-size: 30px 30px;
+
+  mask-image: radial-gradient(
+    ellipse,
+    black 0%,
+    transparent 70%
+  );
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* =========================================
+   ANALYZER CARD — PREMIUM CONNECTION
+   ========================================= */
+
+.analyzer-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.analyzer-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #4f46e5,
+    #6366f1,
+    #7c3aed
+  );
+}
+
+.analyzer-card:hover {
+  box-shadow:
+    0 24px 60px rgba(15, 23, 42, 0.09),
+    0 3px 10px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================
+   BUTTON POLISH
+   ========================================= */
+
+.analyze-button,
+.google-login-button {
+  box-shadow:
+    0 6px 16px rgba(17, 24, 39, 0.12);
+}
+
+.analyze-button:hover,
+.google-login-button:hover {
+  box-shadow:
+    0 8px 20px rgba(79, 70, 229, 0.18);
+}
+
+
+/* =========================================
+   MOBILE HERO
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 16px;
+  }
+
+  .brand-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-status {
+    padding: 7px 9px;
+  }
+
+  .hero {
+    margin-top: 50px;
+    padding: 0 18px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    letter-spacing: -1.8px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+}
