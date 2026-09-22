@@ -4,6 +4,7 @@ import { useGoogleLogin } from '@react-oauth/google'
 import './App.css'
 
 function App() {
+  console.log("SpamShield App is rendering")
   // -----------------------------
   // Gmail states
   // -----------------------------
@@ -36,7 +37,15 @@ function App() {
       console.log('Google/Gmail authorization failed')
     },
   })
+    const logoutFromGmail = () => {
+  setIsLoggedIn(false)
+  setAccessToken(null)
+  setEmails([])
+  setMessage('')
+  setResult(null)
 
+  console.log('Gmail disconnected')
+  }
   // -----------------------------
   // Decode Gmail message body
   // -----------------------------
@@ -362,6 +371,7 @@ function App() {
                 >
                   Continue with Google
                 </button>
+                
               </div>
 
             </div>
@@ -394,7 +404,12 @@ function App() {
                     ? 'Loading Emails...'
                     : 'Load My Emails →'}
                 </button>
-
+                 <button
+                  className="google-logout-button"
+                  onClick={logoutFromGmail}
+                >
+                  Logout from Gmail
+                  </button>
                 {emails.length > 0 && (
                   <div className="email-count">
                     {emails.length} emails loaded from Gmail

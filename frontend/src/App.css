@@ -1345,6 +1345,10 @@ footer p {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  
 }
 
 .hero h1 span {
@@ -1358,6 +1362,7 @@ footer p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  -webkit-background-clip: text;
   background-clip: text;
 }
 
@@ -1518,4 +1523,29 @@ footer p {
   .hero p {
     font-size: 14px;
   }
+}
+/* Gmail Logout Button */
+
+.google-logout-button {
+  margin-top: 12px;
+  padding: 11px 17px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  background: white;
+  color: #dc2626;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.google-logout-button:hover {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+  transform: translateY(-1px);
 }
